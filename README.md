@@ -17,3 +17,7 @@ Once virtual environment is active:
 - Jupyter should open in a new window of the default browser (if not follow the link from the output of previous command)
 - click `data_workflow.ipynb` to open notebook
 - to run all cells click: `Run` -> `Run All Cells`
+
+## Future integration reflections
+
+To allow for ease of ML model training, current workflow would need to be slightly adjusted. Main things would be one-hot encoding categorical variables (`Pclass`, `Embarked`, `Deck`, `Title`), and scaling/normalizing continuous ones (depending on model of choice). Whole included dataset could be used as a training data as there is also `test.csv` file available on Kaggle model site ([link](https://www.kaggle.com/c/titanic/data?select=test.csv)). Slight class inbalance in `Survived` (target) column could potentially also need to be addressed.
